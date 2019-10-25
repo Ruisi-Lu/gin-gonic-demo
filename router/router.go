@@ -8,12 +8,15 @@ import (
 func Init() {
 
 	r := gin.Default()
-	v1 := r.Group("/v1")
+	// 設定群組 /demo   eg. http://0.0.0.0/demo/
+	demo := r.Group("/demo")
 	{
-		v1.GET("123", handlers.HelloPage)
-		v1.GET("a", handlers.HelloPage2)
-		v1.GET("/hello/:name", handlers.HelloPage3)
-		v1.POST("/hello/:name", handlers.HelloPage4)
+		// 子目錄 eg. http://0.0.0.0/demo/123
+		demo.GET("/", handlers.Welcome)
+		demo.GET("123", handlers.HelloPage)
+		demo.GET("a", handlers.HelloPage2)
+		demo.GET("/hello/:name", handlers.HelloPage3)
+		demo.POST("/hello/:name", handlers.HelloPage4)
 	}
 	r.Run(":80")
 
