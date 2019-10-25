@@ -22,7 +22,15 @@ func Init() {
 		// post demo
 		demo.POST("/posthello/:name", handlers.HelloPage4)
 
-
+	// 中間件 BasicAuth
+	account := r.Group("/account", gin.BasicAuth(gin.Accounts{
+		// 測試帳號
+		"ruisi":"123",
+		"wayne":"234",
+	}))
+	
+	account.GET("", handlers.Login)
+	account.GET(":name", handlers.Loginwelcome)
 	r.Run(":80")
 
 }
