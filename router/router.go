@@ -1,7 +1,7 @@
 package router
 
 import (
-	"../handlers"
+	"gin-gonic-demo/handlers"
 	"github.com/gin-gonic/gin"
 )
 

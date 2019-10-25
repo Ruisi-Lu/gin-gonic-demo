@@ -1,6 +1,6 @@
 package main
 
-import "./router"
+import "gin-gonic-demo/router"
 
 func main() {
     router.Init()
