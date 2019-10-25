@@ -21,9 +21,9 @@ go run main.go
 ### Hot reload
 > https://github.com/cosmtrek/air
 
-## Installation
+#### Installation
 
-### on macOS
+##### on macOS
 
 ```bash
 curl -fLo ~/.air \
@@ -31,7 +31,7 @@ curl -fLo ~/.air \
 chmod +x ~/.air
 ```
 
-### on Linux
+##### on Linux
 
 ```bash
 curl -fLo ~/.air \
@@ -39,13 +39,13 @@ curl -fLo ~/.air \
 chmod +x ~/.air
 ```
 
-### on Windows
+##### on Windows
 
 ```bash
 curl -fLo ~/.air.exe \
     https://raw.githubusercontent.com/cosmtrek/air/master/bin/windows/air.exe
 ```
-### Run
+##### Run
 ``` bash
  ./air
  ```
