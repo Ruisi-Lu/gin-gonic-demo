@@ -13,7 +13,11 @@ gin-gonic-demo/
 |- go.mod  
 
 ## How to use
-
+### Swagger API docs
+每次調整都需要init一次
+``` go
+swag init
+```
 ### 一般運行
 ``` go
 go run main.go
